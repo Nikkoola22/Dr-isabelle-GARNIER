@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Dr. Isabelle Garnier - Micronutrition &amp; Coaching Médical</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#13ec37",
+            "primary-dark": "#0ea626",
+            "primary-light": "#e7f3e9",
+            "accent-mustard": "#e3dca8",
+            "background-light": "#f8fcf9",
+            "background-dark": "#0d1b10",
+            "text-main": "#0d1b10",
+            "text-muted": "#4a5f4e",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"],
+            "body": ["Noto Sans", "sans-serif"],
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background-light text-text-main font-body antialiased selection:bg-primary/30">
+<div class="flex min-h-screen flex-col">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 flex items-center justify-between border-b border-primary/10 bg-background-light/95 backdrop-blur-sm px-6 py-4 lg:px-20">
+    <div class="flex items-center gap-3">
+      <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary-dark">
+        <span class="material-symbols-outlined text-2xl">medical_services</span>
+      </div>
+      <div>
+        <h2 class="font-display text-lg font-bold leading-tight tracking-tight text-text-main">Dr. Isabelle Garnier</h2>
+        <p class="text-xs font-medium text-text-muted">Médecin Micronutritionniste</p>
+      </div>
+    </div>
+    <nav class="hidden lg:flex items-center gap-8">
+      <a class="text-sm font-bold text-primary-dark" href="index.html">Accueil</a>
+      <a class="text-sm font-medium text-text-muted hover:text-primary-dark transition-colors" href="parcours.html">Mon Parcours</a>
+      <a class="text-sm font-medium text-text-muted hover:text-primary-dark transition-colors" href="expertise.html">Expertise</a>
+      <a class="text-sm font-medium text-text-muted hover:text-primary-dark transition-colors" href="services.html">Services</a>
+      <a class="text-sm font-medium text-text-muted hover:text-primary-dark transition-colors" href="contact.html">Contact</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <a href="contact.html" class="hidden sm:flex h-10 items-center justify-center rounded-lg bg-primary px-5 text-sm font-bold text-background-dark transition-transform hover:scale-105 hover:bg-primary-dark hover:text-white">
+        Prendre RDV
+      </a>
+      <button id="menu-btn" class="lg:hidden p-2 text-text-main">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden lg:hidden bg-background-light border-b border-primary/10 px-6 py-4 flex flex-col gap-3">
+    <a class="text-sm font-bold text-primary-dark" href="index.html">Accueil</a>
+    <a class="text-sm font-medium text-text-muted" href="parcours.html">Mon Parcours</a>
+    <a class="text-sm font-medium text-text-muted" href="expertise.html">Expertise</a>
+    <a class="text-sm font-medium text-text-muted" href="services.html">Services</a>
+    <a class="text-sm font-medium text-text-muted" href="contact.html">Contact</a>
+  </div>
+
+  <main class="flex-grow">
+
+    <!-- Hero Section -->
+    <section class="relative px-6 py-12 lg:px-20 lg:py-20 overflow-hidden">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+          <div class="flex flex-col gap-6 order-2 lg:order-1">
+            <div class="inline-flex w-fit items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-medium text-primary-dark">
+              <span class="h-2 w-2 rounded-full bg-primary"></span>
+              Consultations à Paris &amp; Téléconsultation
+            </div>
+            <h1 class="font-display text-4xl font-extrabold leading-tight tracking-tight text-text-main lg:text-6xl">
+              Optimisez votre santé <span class="text-primary-dark">durablement</span> par la micronutrition
+            </h1>
+            <p class="max-w-xl text-lg text-text-muted">
+              Une approche médicale, éthique et personnalisée pour retrouver votre équilibre vital. Je vous accompagne dans la compréhension des causes profondes de vos symptômes.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-4">
+              <a href="contact.html" class="flex h-12 items-center justify-center rounded-lg bg-primary px-8 text-base font-bold text-background-dark shadow-lg shadow-primary/20 transition-all hover:bg-primary-dark hover:text-white hover:shadow-xl">
+                Prendre Rendez-vous
+              </a>
+              <a href="expertise.html" class="flex h-12 items-center justify-center rounded-lg border border-primary/30 bg-transparent px-8 text-base font-bold text-text-main transition-colors hover:border-primary hover:bg-primary/5">
+                Découvrir mon approche
+              </a>
+            </div>
+            <div class="mt-8 flex items-center gap-4 text-sm text-text-muted">
+              <div class="flex -space-x-2">
+                <div class="h-8 w-8 rounded-full bg-slate-200 ring-2 ring-white overflow-hidden">
+                  <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDGpaNyb54xub11Rjsz55_w3oUABOP1oONih_S75WajfeKSvV8V0dl8RUFD4-I8zPd3x8AlghoOpiAFhRUkboVnTWpKncrqjrf-CtCK1ksmMyTj0EI09VQXaHHFtsmiWHTvCt8fAx3Gv5qSUbH44O0EX0dbWILCcme5HpPoPOiVI1TSTnpH2Pe1xNOGAdPGO79uEEVJicFEhcZbe7irGYAOkqm7TFnLRwLaxk1LKal01UFQ2qoTzscZ7VRaZCDXzInLGpIZCPCNYI6M');"></div>
+                </div>
+                <div class="h-8 w-8 rounded-full bg-slate-300 ring-2 ring-white overflow-hidden">
+                  <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDL3oolKA3mqt1rhQNj40STOCy2N66F5dTwozjvI8aK2ko9c-GEIwjniUcp3xy7WOZ6ZPQqN-sfg6ecWbekv8FkiZv4SYkIenKSAHVvzQCeH-WhwVJTXMnERbEmx-ufvb_V_ol68iHkhRqpJly6tY6518OrtpLx_9YKxQ0l4ySMQVijRSQGYZwD2lLWtwtoQ22slitK452467UUeB2BNSY8NgI36IvzmV1-pBqSmtWe5Mnntf9ykV-7zcn7aaV4UtPkU4hzQqANgJ8');"></div>
+                </div>
+                <div class="h-8 w-8 rounded-full bg-slate-400 ring-2 ring-white overflow-hidden">
+                  <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDRcqdrrPUoKWPirTQ9mVH1J9OR0FYGyWL9U_H_QHYqednr3vLFWmboa2XCRlK-UVjVHw2wlNDg1vyocIz2YNIE66O1a9PekANPxRNOJe0eiF5595S0XMSptlkajm4gp4MWG7JrqFa0xAf3adJF-Yz_bcgXr_OI-1ODyf5klQommaoh_zkcjIzk9NZUSVbI9WwpsnZJCO8l90YyPM44Z0s7wpZOdIsxR3cOvhzsYiiA4pMKStMTLWP_-HdylIA7uFmRzUEUbt9lupvn');"></div>
+                </div>
+              </div>
+              <p>Recommandé par plus de 2000 patients</p>
+            </div>
+          </div>
+          <div class="relative order-1 lg:order-2">
+            <div class="absolute -right-10 -top-10 h-[400px] w-[400px] rounded-full bg-accent-mustard/20 blur-3xl"></div>
+            <div class="absolute -left-10 bottom-0 h-[300px] w-[300px] rounded-full bg-primary/20 blur-3xl"></div>
+            <div class="relative overflow-hidden rounded-2xl bg-gradient-to-b from-transparent to-primary/10">
+              <div class="aspect-[4/5] w-full bg-cover bg-center lg:aspect-square" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuByUDFokE8znxEGMve5iQsIGEC77iF1r6vaIknY1LfEM5KdF7pem79b9ZB-9gYVMILMch0LXIsTLu9ZjRv5lSdvrRyyx-2o2lJc_nLwYRoMQQwFbsWreyZ0Ck3r7-N_ox00dho0yyoBd0zFlY2y7HJjYUn5ysyPPC0JNznuYCWiAR6p-pTD37HzUH3qygNBaOq5mHDUhsaHtaSdAShtSdItw6vsLdxX-1BxZ5GMYfDDIs6XXLCTrjSvplwW7Xvj4w81WoQMGyO3VJh5vp');"></div>
+              <div class="absolute bottom-6 left-6 right-6 rounded-xl bg-white/90 backdrop-blur-md border border-white/20 shadow-sm overflow-hidden">
+                <div class="w-full overflow-hidden">
+                  <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSXWzw0YLVfrMBB11aaR5AHs1KUGeePNbULhZgWQeiOnJjeHOiwfo3OQTm4PPdljAJXfHePKd-Xf2vy48z-deNfRsJo_UUF1cs4jhSorjsDQYrQpy0KRVnDAnN8d8h15G7lzXSsCUd_Fi6GEMEfW376Sz58z6kZLczgBLXq8j5dEquviiULhuPzzKrKxngCXXVH_u01XQZfOEMf0DeiKb3yYwTOlEjA2Zb1fVS7Bmrha5p2paAlGT3WX1aerkyZUIHPnfurmSFwjhA" alt="Portrait professionnel Dr Isabelle Garnier" class="w-full h-auto object-contain" />
+                </div>
+                <div class="flex items-start gap-3 p-4">
+                  <span class="material-symbols-outlined text-primary-dark mt-1">verified</span>
+                  <div>
+                    <p class="font-bold text-text-main">Médecin diplômé d'État</p>
+                    <p class="text-sm text-text-muted">Inscrit à l'Ordre des Médecins - RPPS 1000xxxxxxx</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="bg-primary-light/50 px-6 py-16 lg:px-20 lg:py-24">
+      <div class="mx-auto max-w-7xl">
+        <div class="mb-12 text-center">
+          <h2 class="font-display text-3xl font-bold text-text-main lg:text-4xl">Une Philosophie de Soin Globale</h2>
+          <p class="mt-4 mx-auto max-w-2xl text-lg text-text-muted">
+            Au-delà des symptômes, nous recherchons les causes profondes de vos déséquilibres grâce à une écoute attentive et une expertise scientifique rigoureuse.
+          </p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-3">
+          <div class="group relative overflow-hidden rounded-xl border border-primary/20 bg-background-light p-8 transition-all hover:border-primary/50 hover:shadow-lg">
+            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary-dark group-hover:bg-primary group-hover:text-background-dark transition-colors">
+              <span class="material-symbols-outlined text-2xl">nutrition</span>
+            </div>
+            <h3 class="mb-2 font-display text-xl font-bold text-text-main">Micronutrition de Précision</h3>
+            <p class="text-text-muted">Correction des déficits nutritionnels pour restaurer l'énergie cellulaire. Analyse biologique approfondie pour cibler vos besoins réels.</p>
+          </div>
+          <div class="group relative overflow-hidden rounded-xl border border-primary/20 bg-background-light p-8 transition-all hover:border-primary/50 hover:shadow-lg">
+            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary-dark group-hover:bg-primary group-hover:text-background-dark transition-colors">
+              <span class="material-symbols-outlined text-2xl">psychology</span>
+            </div>
+            <h3 class="mb-2 font-display text-xl font-bold text-text-main">Coaching Médical</h3>
+            <p class="text-text-muted">Accompagnement personnalisé pour des changements de vie durables. Nous travaillons ensemble sur les freins comportementaux.</p>
+          </div>
+          <div class="group relative overflow-hidden rounded-xl border border-primary/20 bg-background-light p-8 transition-all hover:border-primary/50 hover:shadow-lg">
+            <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary-dark group-hover:bg-primary group-hover:text-background-dark transition-colors">
+              <span class="material-symbols-outlined text-2xl">diversity_1</span>
+            </div>
+            <h3 class="mb-2 font-display text-xl font-bold text-text-main">Éthique &amp; Rigueur</h3>
+            <p class="text-text-muted">Une pratique fondée sur les preuves scientifiques (EBM) et le code de déontologie médicale. Pas de promesses miraculeuses, mais du soin.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="px-6 py-16 lg:px-20 lg:py-24">
+      <div class="mx-auto max-w-7xl">
+        <div class="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <div class="max-w-2xl">
+            <span class="mb-2 block text-sm font-bold uppercase tracking-wider text-primary-dark">Domaines d'intervention</span>
+            <h2 class="font-display text-3xl font-bold text-text-main lg:text-4xl">Expertises &amp; Services</h2>
+            <p class="mt-4 text-lg text-text-muted">Des consultations adaptées à vos besoins spécifiques, du bilan préventif au suivi de pathologies chroniques.</p>
+          </div>
+          <a class="flex items-center gap-2 font-bold text-primary-dark transition-colors hover:text-primary" href="services.html">
+            Voir tous les services
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="group flex flex-col gap-4 rounded-2xl bg-white p-4 shadow-sm transition-all hover:shadow-md border border-slate-100">
+            <div class="aspect-video w-full overflow-hidden rounded-xl bg-gray-100">
+              <div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBI0L2gIVsiyeit1XSYuiFTdU5dTRNcD3ENj-chrn95ZRJmpB_Od28CmbfDY-W6loQrC7brqonUbN-mpMiegckjE5ZKZScbM-M7OHq4kBgK5Ac5hglc89JY0gURjJB6OB0atSspdWvfV41nCjXiw1unh8577NDKHJIWBOUkDt0jL2RK9ZDfHmYFlQoTL2AwyIa_5DY0AXTdXik5dTT4CiTgQB205mk8RyK-DFDPTPD5q8uNiS8gg1pSmcZ9c3mf6oQdR02ZhfOGwgts');"></div>
+            </div>
+            <div class="px-2 pb-2">
+              <h3 class="mb-1 text-lg font-bold text-text-main">Troubles Digestifs &amp; Microbiote</h3>
+              <p class="mb-4 text-sm text-text-muted">Solutions médicales pour le SII, la dysbiose intestinale et les intolérances alimentaires.</p>
+              <a href="expertise.html" class="text-xs font-bold uppercase text-primary-dark hover:underline">En savoir plus</a>
+            </div>
+          </div>
+          <div class="group flex flex-col gap-4 rounded-2xl bg-white p-4 shadow-sm transition-all hover:shadow-md border border-slate-100">
+            <div class="aspect-video w-full overflow-hidden rounded-xl bg-gray-100">
+              <div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC_FyFjyzUKss21K_QmQcWbUzXpsFdkBLfd9zl6SuUki4Rz-5r0Rr_6XtJ7N4Ork1APUWdLHfSdoUGUIn7b8PRQrkgwqwmH5VPTitevs1oWDpmWUCniRURyIKTsF0EqPyuWiHVBnGhIrvVBNRd8XtcdkO569iv7PLo6aUBfs-W1Td_pxWHCkU6zqlNVJQ4m97elV5eOincIaiZ1zGPzORg5dqT53eT0JK-pIuBMHcjn3FfkZIBhmQHTTxNaVAka7IP5A20yRigLpNeO');"></div>
+            </div>
+            <div class="px-2 pb-2">
+              <h3 class="mb-1 text-lg font-bold text-text-main">Gestion du Stress &amp; Sommeil</h3>
+              <p class="mb-4 text-sm text-text-muted">Prise en charge du burn-out, de la fatigue chronique et des troubles du sommeil.</p>
+              <a href="expertise.html" class="text-xs font-bold uppercase text-primary-dark hover:underline">En savoir plus</a>
+            </div>
+          </div>
+          <div class="group flex flex-col gap-4 rounded-2xl bg-white p-4 shadow-sm transition-all hover:shadow-md border border-slate-100">
+            <div class="aspect-video w-full overflow-hidden rounded-xl bg-gray-100">
+              <div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBBlzB0BX3sTB8OGJec4qVfVuGstzvy7bvq_rS5nINaykmazhvv93FeDEb0elbT_4fGiMkFLqlMq7kF4BjTCNhEu8epr5KLkKUTQauajOHHMhkoD-wPjaBzR14BWtw5v1MW4f-X61pOT4LeUpslAgaRiO6x5mGkvMkyK3hf-dibf4-YR2C1q2gS32AEG4uU4VMJJXFwTDGvBvZSpxUUxadKOU5jVAmCSZZjA7iGAFsSD3dVGz_-VTAm2XmpEuHL4WydEuHOE53ZmOCB');"></div>
+            </div>
+            <div class="px-2 pb-2">
+              <h3 class="mb-1 text-lg font-bold text-text-main">Santé de la Femme</h3>
+              <p class="mb-4 text-sm text-text-muted">Accompagnement hormonal spécifique : fertilité, SOPK, endométriose et ménopause.</p>
+              <a href="expertise.html" class="text-xs font-bold uppercase text-primary-dark hover:underline">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="border-y border-primary/10 bg-background-light py-12">
+      <div class="mx-auto max-w-7xl px-6 lg:px-20">
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="flex flex-col items-center justify-center text-center">
+            <span class="font-display text-4xl font-extrabold text-primary-dark">15+</span>
+            <span class="mt-2 text-sm font-medium text-text-muted">Années d'expérience médicale</span>
+          </div>
+          <div class="flex flex-col items-center justify-center text-center">
+            <span class="font-display text-4xl font-extrabold text-primary-dark">2000+</span>
+            <span class="mt-2 text-sm font-medium text-text-muted">Patients accompagnés</span>
+          </div>
+          <div class="flex flex-col items-center justify-center text-center">
+            <span class="font-display text-4xl font-extrabold text-primary-dark">8</span>
+            <span class="mt-2 text-sm font-medium text-text-muted">Formations universitaires</span>
+          </div>
+          <div class="flex flex-col items-center justify-center text-center">
+            <span class="font-display text-4xl font-extrabold text-primary-dark">100%</span>
+            <span class="mt-2 text-sm font-medium text-text-muted">Indépendance (non sponsorisé)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Teaser -->
+    <section class="relative px-6 py-16 lg:px-20 lg:py-24 overflow-hidden">
+      <div class="absolute inset-0 z-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(#13ec37 1px, transparent 1px); background-size: 32px 32px;"></div>
+      <div class="mx-auto max-w-5xl relative z-10">
+        <div class="overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-black/5">
+          <div class="grid lg:grid-cols-2">
+            <div class="p-8 lg:p-12 flex flex-col justify-center">
+              <h2 class="mb-4 font-display text-3xl font-bold text-text-main">Le Cabinet</h2>
+              <div class="space-y-6">
+                <div class="flex items-start gap-4">
+                  <span class="material-symbols-outlined text-primary-dark">location_on</span>
+                  <div>
+                    <h4 class="font-bold text-text-main">Adresse</h4>
+                    <p class="text-text-muted">123 Rue de Rivoli, 75001 Paris<br/>Métro Louvre-Rivoli (Ligne 1)</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <span class="material-symbols-outlined text-primary-dark">schedule</span>
+                  <div>
+                    <h4 class="font-bold text-text-main">Horaires</h4>
+                    <p class="text-text-muted">Lundi - Vendredi : 9h00 - 19h00<br/>Samedi : 9h00 - 13h00 (Téléconsultation uniquement)</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <span class="material-symbols-outlined text-primary-dark">mail</span>
+                  <div>
+                    <h4 class="font-bold text-text-main">Contact</h4>
+                    <p class="text-text-muted">contact@drgarnier.fr<br/>+33 1 23 45 67 89</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8 pt-6 border-t border-slate-100">
+                <a href="contact.html" class="block w-full rounded-lg bg-primary py-3 text-center font-bold text-background-dark transition-colors hover:bg-primary-dark hover:text-white">
+                  Prendre Rendez-vous sur Doctolib
+                </a>
+              </div>
+            </div>
+            <div class="relative h-64 lg:h-auto w-full bg-slate-200">
+              <div class="h-full w-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDu9HNa6fJCs5BDnzB4KcMVfXn2pUDvsuoM5Z6nNlxx1EcVMYBq1hohJATy75JLbOEfIgzuE02BZFDGnPy8J2pbQ7BE6l7GJQfPWoiUUCQ82PvdybRgyFdvcONoHZXhN0ZSS3BrOvf0Bo16yEGZw3w2GcF660Glv8_rT37Au4hBdWJrm84tZL6WTeVuTNJ7HBb_c1p2b4YXca6penmzkdV7ZjdLcjy_4EAOA8mY28EF_G2APxpV9KG0zLrc_kB9tPg0XBSAGmWVoiQP');"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-background-dark py-12 text-slate-300">
+    <div class="mx-auto max-w-7xl px-6 lg:px-20">
+      <div class="grid gap-8 lg:grid-cols-4">
+        <div class="lg:col-span-1">
+          <div class="mb-4 flex items-center gap-2 text-white">
+            <span class="material-symbols-outlined text-primary">medical_services</span>
+            <span class="font-display text-lg font-bold">Dr. Isabelle Garnier</span>
+          </div>
+          <p class="text-sm text-slate-400">Médecine fonctionnelle et nutritionnelle.<br/>Une approche préventive pour une santé durable.</p>
+        </div>
+        <div>
+          <h4 class="mb-4 font-bold text-white">Navigation</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a class="hover:text-primary transition-colors" href="index.html">Accueil</a></li>
+            <li><a class="hover:text-primary transition-colors" href="expertise.html">Expertises</a></li>
+            <li><a class="hover:text-primary transition-colors" href="services.html">Services</a></li>
+            <li><a class="hover:text-primary transition-colors" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="mb-4 font-bold text-white">Patients</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a class="hover:text-primary transition-colors" href="contact.html">Prendre RDV</a></li>
+            <li><a class="hover:text-primary transition-colors" href="services.html">Tarifs &amp; Remboursements</a></li>
+            <li><a class="hover:text-primary transition-colors" href="services.html">FAQ</a></li>
+            <li><a class="hover:text-primary transition-colors" href="services.html">Préparer sa consultation</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="mb-4 font-bold text-white">Mentions Légales</h4>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li>RPPS : 1000xxxxxxx</li>
+            <li>N° Ordre : 75/xxxxx</li>
+            <li><a class="underline decoration-slate-600 underline-offset-2 hover:text-primary" href="#">Politique de confidentialité</a></li>
+            <li><a class="underline decoration-slate-600 underline-offset-2 hover:text-primary" href="#">Mentions légales</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 border-t border-white/10 pt-8 text-center text-xs text-slate-500">
+        <p>© 2024 Dr. Isabelle Garnier. Tous droits réservés. En cas d'urgence, composez le 15.</p>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById('menu-btn').addEventListener('click', () => {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>

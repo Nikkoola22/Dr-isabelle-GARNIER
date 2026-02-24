@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Expertise en Micronutrition - Dr. Isabelle Garnier</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#13ec37",
+            "primary-dark": "#0fa828",
+            "primary-light": "#e7f3e9",
+            "background-light": "#f8fcf9",
+            "background-dark": "#102213",
+            "surface-light": "#ffffff",
+            "surface-dark": "#1a331d",
+            "text-main": "#0d1b10",
+            "text-muted": "#527056",
+          },
+          fontFamily: { "display": ["Manrope", "sans-serif"] },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background-light text-text-main font-display antialiased">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 w-full border-b border-primary-light bg-background-light/80 backdrop-blur-md">
+    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-4 text-text-main">
+        <div class="size-8 text-primary">
+          <span class="material-symbols-outlined text-3xl">local_pharmacy</span>
+        </div>
+        <a href="index.html" class="text-lg font-bold leading-tight tracking-[-0.015em]">Dr. Isabelle Garnier</a>
+      </div>
+      <nav class="hidden md:flex flex-1 justify-end gap-8">
+        <div class="flex items-center gap-6 lg:gap-9">
+          <a class="text-sm font-medium hover:text-primary-dark transition-colors" href="index.html">Accueil</a>
+          <a class="text-sm font-medium hover:text-primary-dark transition-colors" href="parcours.html">Mon Parcours</a>
+          <a class="text-sm font-bold text-primary-dark" href="expertise.html">Expertise</a>
+          <a class="text-sm font-medium hover:text-primary-dark transition-colors" href="services.html">Services</a>
+          <a class="text-sm font-medium hover:text-primary-dark transition-colors" href="contact.html">Contact</a>
+        </div>
+        <a href="contact.html" class="flex items-center justify-center overflow-hidden rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white transition-transform hover:scale-105 hover:bg-primary-dark">
+          Prendre rendez-vous
+        </a>
+      </nav>
+      <button id="menu-btn" class="md:hidden">
+        <span class="material-symbols-outlined cursor-pointer text-2xl">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-background-light border-b border-primary/10 px-6 py-4 flex flex-col gap-3">
+    <a class="text-sm font-medium" href="index.html">Accueil</a>
+    <a class="text-sm font-medium" href="parcours.html">Mon Parcours</a>
+    <a class="text-sm font-bold text-primary-dark" href="expertise.html">Expertise</a>
+    <a class="text-sm font-medium" href="services.html">Services</a>
+    <a class="text-sm font-medium" href="contact.html">Contact</a>
+  </div>
+
+  <main class="flex-grow">
+
+    <!-- Hero Section -->
+    <section class="relative px-4 py-8 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="overflow-hidden rounded-2xl bg-surface-dark relative min-h-[500px] flex items-end">
+        <div class="absolute inset-0 z-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAZgU9iXhixIVgiMhWX39VPuYHO1To1uYPOid2Tdg3V4ZY4zAhQmqgUlFqbQzYqBpmE_n6R4lVx8mRAxcC9IiFQEPXkNnG5QjXlOvHiezE2Lcz1Q8TlaIpUJpEqPJDIkCsG1CMcjm4bApF8t03AAmRk40gL5U2kX1z0CDyeFYA-LdtH3JwSZ_G0LiCR4Y0xplnvz4z3J9LPI5IIRmsYySFM86Y386h7upi-b-aowmxRwLOq3uw3eEUQ4On_bBfEa3qPjRptj3NHK4s2");'></div>
+        <div class="absolute inset-0 z-10 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+        <div class="relative z-20 flex flex-col gap-4 p-8 md:p-12 max-w-3xl">
+          <div class="inline-flex items-center gap-2 rounded-full bg-primary/20 backdrop-blur-sm px-3 py-1 text-xs font-bold text-primary uppercase tracking-wide w-fit border border-primary/30">
+            Médecine Fonctionnelle
+          </div>
+          <h1 class="text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">
+            Expertise scientifique en Micronutrition
+          </h1>
+          <p class="text-lg font-medium text-gray-200 sm:text-xl max-w-2xl">
+            Une approche médicale personnalisée basée sur la biologie fonctionnelle pour restaurer votre équilibre interne et optimiser votre santé à long terme.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-4">
+            <a href="parcours.html" class="flex items-center justify-center rounded-lg bg-primary px-6 py-3 text-base font-bold text-white shadow-lg shadow-primary/25 transition-all hover:bg-primary-dark">
+              Découvrir mon approche
+            </a>
+            <a href="services.html" class="flex items-center justify-center rounded-lg bg-white/10 backdrop-blur-md border border-white/20 px-6 py-3 text-base font-bold text-white transition-all hover:bg-white/20">
+              Le Bilan Fonctionnel
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scientific Approach -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="flex flex-col gap-4 mb-12">
+        <h2 class="text-3xl font-bold tracking-tight text-text-main sm:text-4xl max-w-[720px]">L'Approche Scientifique</h2>
+        <p class="text-lg text-text-muted max-w-2xl">Notre méthode repose sur une analyse approfondie de vos déséquilibres biologiques invisibles pour restaurer votre vitalité durablement.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="group relative flex flex-col gap-4 rounded-xl border border-[#cfe7d3] bg-surface-light p-6 transition-all hover:shadow-lg hover:border-primary/50">
+          <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-3xl">biotech</span>
+          </div>
+          <div class="space-y-2">
+            <h3 class="text-xl font-bold text-text-main">Biologie Fonctionnelle</h3>
+            <p class="text-text-muted">Analyse fine des marqueurs biologiques pour comprendre les mécanismes biochimiques spécifiques à votre métabolisme.</p>
+          </div>
+        </div>
+        <div class="group relative flex flex-col gap-4 rounded-xl border border-[#cfe7d3] bg-surface-light p-6 transition-all hover:shadow-lg hover:border-primary/50">
+          <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-3xl">health_and_safety</span>
+          </div>
+          <div class="space-y-2">
+            <h3 class="text-xl font-bold text-text-main">Prévention Santé</h3>
+            <p class="text-text-muted">Une démarche proactive qui agit en amont des pathologies chroniques par des ajustements nutritionnels ciblés.</p>
+          </div>
+        </div>
+        <div class="group relative flex flex-col gap-4 rounded-xl border border-[#cfe7d3] bg-surface-light p-6 transition-all hover:shadow-lg hover:border-primary/50">
+          <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-3xl">vital_signs</span>
+          </div>
+          <div class="space-y-2">
+            <h3 class="text-xl font-bold text-text-main">Équilibre Cellulaire</h3>
+            <p class="text-text-muted">Optimisation de la respiration cellulaire et lutte contre le stress oxydatif pour ralentir le vieillissement prématuré.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bilan Micronutritionnel -->
+    <section class="bg-[#f0f7f1] py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="order-2 lg:order-1 relative">
+            <div class="aspect-square rounded-2xl bg-white p-8 shadow-xl relative overflow-hidden flex items-center justify-center">
+              <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#13ec37 1px, transparent 1px); background-size: 20px 20px;"></div>
+              <div class="relative z-10 w-full max-w-sm">
+                <div class="flex justify-between items-end mb-4 text-xs font-semibold text-text-muted uppercase tracking-wider">
+                  <span>Carences</span><span>Optimal</span><span>Excès</span>
+                </div>
+                <div class="space-y-4">
+                  <div>
+                    <div class="flex justify-between text-sm font-medium mb-1"><span>Vitamine D</span> <span class="text-primary-dark">32 ng/mL</span></div>
+                    <div class="h-3 w-full bg-gray-100 rounded-full overflow-hidden">
+                      <div class="h-full bg-yellow-400 w-[40%] rounded-full"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between text-sm font-medium mb-1"><span>Ferritine</span> <span class="text-primary-dark">45 ng/mL</span></div>
+                    <div class="h-3 w-full bg-gray-100 rounded-full overflow-hidden">
+                      <div class="h-full bg-primary w-[65%] rounded-full"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between text-sm font-medium mb-1"><span>Zinc</span> <span class="text-primary-dark">12 µmol/L</span></div>
+                    <div class="h-3 w-full bg-gray-100 rounded-full overflow-hidden">
+                      <div class="h-full bg-primary w-[55%] rounded-full"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between text-sm font-medium mb-1"><span>Oméga-3 Index</span> <span class="text-primary-dark">4.2%</span></div>
+                    <div class="h-3 w-full bg-gray-100 rounded-full overflow-hidden">
+                      <div class="h-full bg-red-400 w-[25%] rounded-full"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-8 pt-6 border-t border-gray-100 text-center">
+                  <p class="text-xs text-text-muted italic">Exemple simplifié d'un profil biologique micronutritionnel.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order-1 lg:order-2 flex flex-col gap-6">
+            <div class="inline-flex items-center gap-2 text-primary-dark font-bold uppercase tracking-wider text-sm">
+              <span class="h-px w-8 bg-primary"></span>Diagnostic
+            </div>
+            <h2 class="text-3xl font-bold text-text-main sm:text-4xl">Le Bilan Micronutritionnel</h2>
+            <p class="text-lg text-text-muted">Au-delà des analyses sanguines classiques, nous explorons des biomarqueurs spécifiques pour dresser une cartographie précise de votre état de santé.</p>
+            <ul class="space-y-4 mt-2">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary-dark mt-1">check_circle</span>
+                <div><strong class="block text-text-main">Statut en Acides Gras</strong><span class="text-text-muted text-sm">Évaluation du rapport Oméga-6 / Oméga-3 et de l'inflammation de bas grade.</span></div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary-dark mt-1">check_circle</span>
+                <div><strong class="block text-text-main">Stress Oxydatif</strong><span class="text-text-muted text-sm">Mesure des défenses antioxydantes et des dégâts radicalaires.</span></div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary-dark mt-1">check_circle</span>
+                <div><strong class="block text-text-main">Neurotransmetteurs</strong><span class="text-text-muted text-sm">Analyse des métabolites urinaires pour comprendre l'état émotionnel et le sommeil.</span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Microbiota Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="bg-surface-dark rounded-3xl overflow-hidden shadow-2xl">
+        <div class="grid md:grid-cols-2">
+          <div class="p-10 md:p-16 flex flex-col justify-center">
+            <h2 class="text-3xl font-bold text-white mb-6">L'Axe Intestin-Cerveau &amp; Microbiote</h2>
+            <p class="text-gray-300 mb-8 leading-relaxed">Le microbiote intestinal est aujourd'hui considéré comme un organe à part entière. Son déséquilibre (dysbiose) est à l'origine de nombreux troubles fonctionnels, immunitaires et même psychiques.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="bg-white/5 backdrop-blur border border-white/10 p-4 rounded-xl">
+                <span class="material-symbols-outlined text-primary text-3xl mb-3 block">psychology</span>
+                <h4 class="text-white font-bold mb-1">Connexion Nerveuse</h4>
+                <p class="text-gray-400 text-sm">Le nerf vague relie directement vos intestins à votre cerveau.</p>
+              </div>
+              <div class="bg-white/5 backdrop-blur border border-white/10 p-4 rounded-xl">
+                <span class="material-symbols-outlined text-primary text-3xl mb-3 block">shield</span>
+                <h4 class="text-white font-bold mb-1">Immunité</h4>
+                <p class="text-gray-400 text-sm">70% de nos cellules immunitaires résident dans l'intestin.</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative h-64 md:h-auto bg-[#1a331d]">
+            <div class="absolute inset-0 opacity-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1628595351029-c2bf17511435?q=80&w=2000&auto=format&fit=crop')"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-surface-dark to-transparent"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 text-center px-4">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold text-text-main mb-6">Prêt à optimiser votre santé ?</h2>
+        <p class="text-lg text-text-muted mb-8">Chaque patient est unique. Prenons le temps d'analyser vos besoins spécifiques lors d'une première consultation.</p>
+        <a href="contact.html" class="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-4 text-base font-bold text-white shadow-lg shadow-primary/30 transition-all hover:-translate-y-1 hover:bg-primary-dark">
+          Prendre rendez-vous au cabinet
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-surface-light border-t border-[#e7f3e9] py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="md:col-span-1">
+        <div class="flex items-center gap-2 mb-4 text-text-main">
+          <span class="material-symbols-outlined text-primary">local_pharmacy</span>
+          <span class="font-bold">Dr. Isabelle Garnier</span>
+        </div>
+        <p class="text-sm text-text-muted">Médecin généraliste diplômée en Micronutrition et Médecine Fonctionnelle.</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-text-main mb-4">Plan du site</h4>
+        <ul class="space-y-2 text-sm text-text-muted">
+          <li><a class="hover:text-primary-dark" href="expertise.html">L'Approche</a></li>
+          <li><a class="hover:text-primary-dark" href="services.html">Bilan Fonctionnel</a></li>
+          <li><a class="hover:text-primary-dark" href="services.html">Tarifs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-text-main mb-4">Informations</h4>
+        <ul class="space-y-2 text-sm text-text-muted">
+          <li><a class="hover:text-primary-dark" href="#">Mentions légales</a></li>
+          <li><a class="hover:text-primary-dark" href="#">Politique de confidentialité</a></li>
+          <li><a class="hover:text-primary-dark" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-text-main mb-4">Cabinet</h4>
+        <p class="text-sm text-text-muted mb-2">123 Rue de Rivoli<br/>75001 Paris</p>
+        <p class="text-sm text-text-muted">Tél: +33 1 23 45 67 89</p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-200 text-center text-sm text-text-muted">
+      © 2024 Dr. Isabelle Garnier. Tous droits réservés.
+    </div>
+  </footer>
+
+</div>
+<script>
+  document.getElementById('menu-btn').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>

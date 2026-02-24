@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Services &amp; Accompagnement - Dr. Isabelle Garnier</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#13ec37",
+            "primary-dark": "#0fae29",
+            "primary-light": "#e7f3e9",
+            "text-main": "#0d1b10",
+            "text-secondary": "#4c9a59",
+            "background-light": "#f8fcf9",
+            "background-dark": "#102213",
+            "border-color": "#cfe7d3"
+          },
+          fontFamily: { "display": ["Manrope", "sans-serif"] },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background-light text-text-main font-display antialiased overflow-x-hidden">
+<div class="relative flex min-h-screen w-full flex-col">
+<div class="layout-container flex h-full grow flex-col">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-primary-light bg-background-light/95 backdrop-blur-sm px-6 md:px-10 py-4">
+    <div class="flex items-center gap-4 text-text-main">
+      <div class="size-8 text-primary">
+        <span class="material-symbols-outlined text-3xl">local_florist</span>
+      </div>
+      <a href="index.html" class="text-lg font-bold leading-tight tracking-[-0.015em]">Dr. Isabelle Garnier</a>
+    </div>
+    <div class="flex flex-1 justify-end gap-8">
+      <nav class="hidden md:flex items-center gap-9">
+        <a class="text-sm font-medium leading-normal hover:text-primary-dark transition-colors" href="index.html">Accueil</a>
+        <a class="text-sm font-medium leading-normal hover:text-primary-dark transition-colors" href="parcours.html">Mon Parcours</a>
+        <a class="text-sm font-medium leading-normal hover:text-primary-dark transition-colors" href="expertise.html">Expertise</a>
+        <a class="text-sm font-bold leading-normal text-primary-dark" href="services.html">Services</a>
+        <a class="text-sm font-medium leading-normal hover:text-primary-dark transition-colors" href="contact.html">Contact</a>
+      </nav>
+      <a href="contact.html" class="hidden md:flex min-w-[84px] items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-primary-dark transition-colors text-text-main text-sm font-bold">
+        Prendre rendez-vous
+      </a>
+      <button id="menu-btn" class="md:hidden p-2">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-background-light border-b border-primary/10 px-6 py-4 flex flex-col gap-3">
+    <a class="text-sm font-medium" href="index.html">Accueil</a>
+    <a class="text-sm font-medium" href="parcours.html">Mon Parcours</a>
+    <a class="text-sm font-medium" href="expertise.html">Expertise</a>
+    <a class="text-sm font-bold text-primary-dark" href="services.html">Services</a>
+    <a class="text-sm font-medium" href="contact.html">Contact</a>
+  </div>
+
+  <main class="flex flex-1 flex-col items-center w-full">
+
+    <!-- Hero -->
+    <div class="w-full max-w-7xl px-4 md:px-10 py-12 md:py-20 flex flex-col gap-6 items-start">
+      <div class="flex flex-col gap-4 max-w-3xl">
+        <span class="text-primary-dark font-bold tracking-wider uppercase text-sm">Approche Intégrative</span>
+        <h1 class="text-text-main text-4xl md:text-6xl font-black leading-tight tracking-[-0.033em]">
+          Parcours de Transformation &amp; Accompagnement
+        </h1>
+        <p class="text-text-secondary text-lg md:text-xl font-normal leading-relaxed max-w-2xl">
+          Une approche holistique et personnalisée pour votre santé, alliant précision scientifique de la micronutrition et bienveillance du coaching médical.
+        </p>
+      </div>
+    </div>
+
+    <!-- Methodology -->
+    <div class="w-full bg-white border-y border-primary-light py-16">
+      <div class="max-w-7xl mx-auto px-4 md:px-10 flex flex-col gap-10">
+        <div class="flex flex-col gap-4">
+          <h2 class="text-text-main text-3xl font-bold leading-tight tracking-tight">La Méthode Garnier</h2>
+          <p class="text-text-secondary text-base max-w-2xl">Mon approche repose sur une prise en charge globale. Nous ne traitons pas seulement les symptômes, mais cherchons à rétablir l'équilibre profond de votre organisme.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="flex flex-col gap-4 p-6 rounded-xl bg-background-light border border-border-color hover:shadow-lg transition-shadow duration-300">
+            <div class="size-12 rounded-full bg-primary-light flex items-center justify-center text-primary mb-2">
+              <span class="material-symbols-outlined text-2xl">stethoscope</span>
+            </div>
+            <h3 class="text-text-main text-xl font-bold">1. Bilan Initial</h3>
+            <p class="text-text-secondary text-sm leading-relaxed">Une première consultation approfondie pour comprendre votre histoire médicale, vos habitudes de vie et vos objectifs de santé.</p>
+          </div>
+          <div class="flex flex-col gap-4 p-6 rounded-xl bg-background-light border border-border-color hover:shadow-lg transition-shadow duration-300">
+            <div class="size-12 rounded-full bg-primary-light flex items-center justify-center text-primary mb-2">
+              <span class="material-symbols-outlined text-2xl">science</span>
+            </div>
+            <h3 class="text-text-main text-xl font-bold">2. Analyse Biologique</h3>
+            <p class="text-text-secondary text-sm leading-relaxed">Prescription et interprétation d'analyses fonctionnelles ciblées pour identifier les carences, déséquilibres hormonaux ou inflammatoires.</p>
+          </div>
+          <div class="flex flex-col gap-4 p-6 rounded-xl bg-background-light border border-border-color hover:shadow-lg transition-shadow duration-300">
+            <div class="size-12 rounded-full bg-primary-light flex items-center justify-center text-primary mb-2">
+              <span class="material-symbols-outlined text-2xl">clinical_notes</span>
+            </div>
+            <h3 class="text-text-main text-xl font-bold">3. Plan Personnalisé</h3>
+            <p class="text-text-secondary text-sm leading-relaxed">Élaboration d'un protocole sur-mesure incluant nutrition, complémentation précise et ajustements du mode de vie.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Programs -->
+    <div class="w-full max-w-7xl px-4 md:px-10 py-16">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
+        <div>
+          <h2 class="text-text-main text-3xl font-bold leading-tight mb-2">Nos Parcours de Soins</h2>
+          <p class="text-text-secondary">Choisissez l'accompagnement adapté à vos besoins de santé.</p>
+        </div>
+        <span class="text-xs font-medium text-text-secondary bg-primary-light px-3 py-1 rounded-full">Consultations à Paris ou en Visio</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Card 1 -->
+        <div class="flex flex-col h-full rounded-2xl border border-border-color bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+          <div class="h-48 w-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAc7AFLZQPZ6dTXeSGMnIvqBJs9DdmP-DYXcErhiu6ZOSZe88qSIuh0wN3ZoW30RHKPQstnXWKbyUpWWHnLPIqwmkAJpewfWslZ_SBUH6y32jrgcSFIumdn8HOXGnoOMF7FRkdpY3WtPhcjO58InqJZucDdpcYlUqsDl9ppOhv575kjW8G5ukciyuL-ibcp87spoFonO8v8THtPhd65nQyusZwVcDV8uv3rU4t5_po8VpDfLgIj_9O0kafHz4BTVNvYzMaMINCGQggc");'>
+            <div class="w-full h-full bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
+              <span class="bg-primary text-text-main text-xs font-bold px-3 py-1 rounded-md uppercase tracking-wide">Essentiel</span>
+            </div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="flex justify-between items-start mb-4">
+              <h3 class="text-text-main text-xl font-bold">Bilan Micronutritionnel</h3>
+              <div class="text-right"><p class="text-text-main font-bold text-lg">120€</p><p class="text-text-secondary text-xs">la séance</p></div>
+            </div>
+            <p class="text-text-secondary text-sm mb-6 flex-grow">L'étape fondamentale pour faire le point sur votre santé cellulaire et digestive. Idéal pour débuter votre transformation.</p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-3 text-sm text-text-main"><span class="material-symbols-outlined text-primary text-lg">check_circle</span><span>Consultation 1h</span></li>
+              <li class="flex items-start gap-3 text-sm text-text-main"><span class="material-symbols-outlined text-primary text-lg">check_circle</span><span>Analyse des symptômes cliniques</span></li>
+              <li class="flex items-start gap-3 text-sm text-text-main"><span class="material-symbols-outlined text-primary text-lg">check_circle</span><span>Prescription analyses biologiques</span></li>
+            </ul>
+            <a href="contact.html" class="w-full py-3 rounded-lg border-2 border-primary-light hover:border-primary text-text-main font-bold text-sm transition-colors flex items-center justify-center gap-2">
+              <span>Réserver sur Doctolib</span>
+              <span class="material-symbols-outlined text-lg">open_in_new</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2 (Popular) -->
+        <div class="flex flex-col h-full rounded-2xl border-2 border-primary/20 bg-white overflow-hidden shadow-md relative">
+          <div class="absolute top-4 right-4 z-10">
+            <span class="bg-primary text-text-main text-xs font-bold px-3 py-1 rounded-full shadow-sm">Populaire</span>
+          </div>
+          <div class="h-48 w-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC9fhEVM6X84LXqYq_ZtqEl4p-bex6NnyQppLAfd_3UzR1c2YeiqBfOPh1Il4fp41Th5TZBtxDHykzt_eD7NJBjpXkQOzvd6cOpOemn5UJTwkZZMc0bPY9__9g6sNJoMN_Zbi10gtyZwQCYosdHoWoXZ82GNHbOZcYIuvU6k6lcwmGs4t6AMyUJQbRNzbfaUu5MxSeFKD_DNxJSxdUmCePNE1Ce9aLVGKCT3lBjhTlAatyDx74w4w_Nxo9_ba_fU3ldWNmIPl9K0pyD");'>
+            <div class="w-full h-full bg-gradient-to-t from-black/50 to-transparent flex items-end p-6"></div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="flex justify-between items-start mb-4">
+              <h3 class="text-text-main text-xl font-bold">Suivi &amp; Ajustement</h3>
+              <div class="text-right"><p class="text-text-main font-bold text-lg">80€</p><p class="text-text-secondary text-xs">la séance</p></div>
+            </div>
+            <p class="text-text-secondary text-sm mb-6 flex-grow">Un accompagnement régulier pour interpréter vos résultats et affiner votre protocole nutritionnel au fil du temps.</p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-3 text-sm text-text-main"><span class="material-symbols-outlined text-primary text-lg">check_circle</span><span>Interprétation des résultats</span></li>
+              <li class="flex items-start gap-3 text-sm text-text-main"><span class="material-symbols-outlined text-primary text-lg">check_circle</span><span>Ajustement du plan alimentaire</span></li>
+              <li class="flex items-start gap-3 text-sm text-text-main"><span class="material-symbols-outlined text-primary text-lg">check_circle</span><span>Renouvellement ordonnance</span></li>
+            </ul>
+            <a href="contact.html" class="w-full py-3 rounded-lg bg-primary hover:bg-primary-dark text-text-main font-bold text-sm transition-colors flex items-center justify-center gap-2 shadow-lg shadow-primary/20">
+              <span>Réserver sur Doctolib</span>
+              <span class="material-symbols-outlined text-lg">open_in_new</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flex flex-col h-full rounded-2xl border border-border-color bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+          <div class="h-48 w-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3YO5VfnKvJh8z2bs6lVd_eXZVJuvpU1wObaLxdinxrA7Axu4srGXwHY3nwBuYy37Jo_PQGisON5v2jvWOwWnWkqqo8HV6Aq2V__XRhBtjVFUVCz3aJ5tzJIGZsl7CWnOT3RwCvTXTC4MsFf7BpwG1viTDxhkZMtGtqucYbnq-47KG33wjntOTsnmTQe_oMvw30YZhCKj46wwh-z7pXOyOrq7ra_IgDW9pct8ItamSPFJ9tymWsNmZCCCCilXKyJxfwiLw8WBvJy8S");'>
+            <div class="w-full h-full bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
+              <span class="bg-gray-800 text-white text-xs font-bold px-3 py-1 rounded-md uppercase tracking-wide">Premium</span>
+            </div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="flex justify-between items-start mb-4">
+              <h3 class="text-text-main text-xl font-bold">Coaching Médical Global</h3>
+              <div class="text-right"><p class="text-text-main font-bold text-lg">Sur Devis</p><p class="text-text-secondary text-xs">Programme 3-6 mois</p></div>
+            </div>
+            <p class="text-text-secondary text-sm mb-6 flex-grow">Une prise en charge intensive pour les pathologies chroniques ou la performance sportive. Un véritable partenariat santé.</p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-3 text-sm text-text-main"><span class="material-symbols-outlined text-primary text-lg">check_circle</span><span>Suivi hebdomadaire dédié</span></li>
+              <li class="flex items-start gap-3 text-sm text-text-main"><span class="material-symbols-outlined text-primary text-lg">check_circle</span><span>Protocoles avancés &amp; prévention</span></li>
+              <li class="flex items-start gap-3 text-sm text-text-main"><span class="material-symbols-outlined text-primary text-lg">check_circle</span><span>Accès prioritaire par message</span></li>
+            </ul>
+            <a href="contact.html" class="w-full py-3 rounded-lg border-2 border-primary-light hover:border-primary text-text-main font-bold text-sm transition-colors flex items-center justify-center gap-2">
+              <span>Contacter le cabinet</span>
+              <span class="material-symbols-outlined text-lg">mail</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="w-full bg-white border-t border-primary-light py-16">
+      <div class="max-w-4xl mx-auto px-4 md:px-10 flex flex-col gap-10">
+        <h2 class="text-text-main text-2xl font-bold text-center">Questions Fréquentes</h2>
+        <div class="flex flex-col gap-4">
+          <details class="group p-4 bg-background-light rounded-lg border border-border-color cursor-pointer open:border-primary/50">
+            <summary class="flex justify-between items-center font-bold text-text-main list-none">
+              <span>Les consultations sont-elles remboursées ?</span>
+              <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+            </summary>
+            <p class="text-text-secondary text-sm mt-3 leading-relaxed">La micronutrition n'est pas remboursée par la Sécurité Sociale. Cependant, de nombreuses mutuelles proposent des forfaits "Médecines Douces" ou "Nutrition" qui peuvent couvrir une partie des frais. Une facture vous sera remise à l'issue de chaque consultation.</p>
+          </details>
+          <details class="group p-4 bg-background-light rounded-lg border border-border-color cursor-pointer open:border-primary/50">
+            <summary class="flex justify-between items-center font-bold text-text-main list-none">
+              <span>Dois-je faire des analyses avant de venir ?</span>
+              <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+            </summary>
+            <p class="text-text-secondary text-sm mt-3 leading-relaxed">Ce n'est pas obligatoire. Lors du bilan initial, nous évaluerons ensemble la nécessité de réaliser des bilans biologiques spécifiques. Si vous disposez d'analyses récentes (moins de 6 mois), merci de les apporter.</p>
+          </details>
+          <details class="group p-4 bg-background-light rounded-lg border border-border-color cursor-pointer open:border-primary/50">
+            <summary class="flex justify-between items-center font-bold text-text-main list-none">
+              <span>Comment se déroule la téléconsultation ?</span>
+              <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+            </summary>
+            <p class="text-text-secondary text-sm mt-3 leading-relaxed">La téléconsultation se déroule via un outil sécurisé (souvent Doctolib). Elle offre la même qualité d'écoute et de prise en charge qu'au cabinet. Les ordonnances sont envoyées de manière dématérialisée et sécurisée.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer CTA -->
+    <div class="w-full bg-background-light py-20 px-4 text-center">
+      <div class="max-w-2xl mx-auto flex flex-col items-center gap-6">
+        <h2 class="text-text-main text-3xl font-bold">Prêt à reprendre le contrôle de votre santé ?</h2>
+        <p class="text-text-secondary">Le premier pas vers un mieux-être durable commence par une décision. Réservez votre créneau dès maintenant.</p>
+        <a href="contact.html" class="flex min-w-[200px] items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-primary hover:bg-primary-dark transition-colors text-text-main text-base font-bold shadow-lg shadow-primary/30">
+          Prendre rendez-vous
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-primary-light bg-white py-10 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="flex items-center gap-2">
+        <div class="size-6 text-primary"><span class="material-symbols-outlined">local_florist</span></div>
+        <span class="font-bold text-text-main">Dr. Isabelle Garnier</span>
+      </div>
+      <div class="text-text-secondary text-sm">© 2024 Dr. Isabelle Garnier. Tous droits réservés.</div>
+      <div class="flex gap-6">
+        <a class="text-text-secondary hover:text-primary-dark transition-colors text-sm" href="#">Mentions légales</a>
+        <a class="text-text-secondary hover:text-primary-dark transition-colors text-sm" href="#">Politique de confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</div>
+<script>
+  document.getElementById('menu-btn').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
